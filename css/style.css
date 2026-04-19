@@ -11,8 +11,11 @@ header {
     padding: 20px;
 }
 nav {
-    background-color: #34495e;
-    padding: 10px;
+    display: inline-block;
+    width: 80%;
+}
+nav img {
+    width: 10%;
 }
 main {
     background-color: #ffffff;
@@ -25,10 +28,10 @@ footer {
     padding: 10px;
     text-align: center;
 }
-li {
+/*li {
     display: inline-block;
     width: 150px;
-}
+}*/
 h1 {
     text-align: center;
     font-family: Georgia, serif;
@@ -36,4 +39,36 @@ h1 {
 }
 p {
     line-height: 1.8;
+}
+.skip {
+    position: absolute;
+    left: -10000px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.skip:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    background-color: white;
+    border: 2px solid black;
+}
+.grid {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: center;
+    row-gap: 20px;
+}
+
+.grid img {
+    width: 100%;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
